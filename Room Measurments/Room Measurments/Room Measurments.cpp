@@ -25,7 +25,6 @@ private:
 void Wall::GetWallDetails(double dWidthpass) 
 {
 	dWidth = dWidthpass;
-	cout << "sadasd";
 };
 
 
