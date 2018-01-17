@@ -9,6 +9,17 @@
 
 using namespace std;
 
+class Floor
+{
+	public:
+	
+	private:
+
+	protected:
+
+
+}
+
 class Wall
 {
 public:
@@ -17,7 +28,15 @@ public:
 protected:
 	 
 private:
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	double dHeight =10;
+=======
+	double dHeight =0;
+>>>>>>> Stashed changes
+=======
+	double dHeight =0;
+>>>>>>> Stashed changes
 	double dWidth =0; 
 
 };
