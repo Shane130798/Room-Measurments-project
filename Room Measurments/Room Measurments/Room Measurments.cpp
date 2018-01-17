@@ -18,7 +18,7 @@ class Floor
 	protected:
 
 
-}
+};
 
 class Wall
 {
@@ -28,15 +28,10 @@ public:
 protected:
 	 
 private:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 	double dHeight =10;
-=======
 	double dHeight =0;
->>>>>>> Stashed changes
-=======
 	double dHeight =0;
->>>>>>> Stashed changes
 	double dWidth =0; 
 
 };
