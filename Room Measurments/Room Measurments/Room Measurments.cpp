@@ -11,7 +11,11 @@ using namespace std;
 
 class wall
 {
+	protected:
+	 double dHeight;
+	 double dWidth;
 
+	 
 
 };
 
