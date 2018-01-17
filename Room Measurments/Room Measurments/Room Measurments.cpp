@@ -31,7 +31,7 @@ void Wall::GetWallDetails(double dWidthpass)
 
 double Wall::ShowResults(double dHeightpass, double dWidthpass)
 {	
-	double  dArea = dHeight * dWidth;
+	double  dArea = dHeight[2] * dWidth;
 	double dPrice = dArea * 1;
 	double dPriceDeluxe = dArea * 12;
 	cout << endl << endl << "The Price of Normal Wallpaper for this wall is: " << char(156) << dPrice;
