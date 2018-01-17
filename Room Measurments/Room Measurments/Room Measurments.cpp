@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class
+class wall
 {
 
 
@@ -17,6 +17,14 @@ class
 
 int main()
 {
+
+
+
+
+
+
+
+	_getch();
     return 0;
 }
 
