@@ -16,11 +16,7 @@ class Floor
 	private:
 
 	protected:
-
-
-
 };
-
 
 class Wall
 {
@@ -30,8 +26,6 @@ public:
 protected:
 	 
 private:
-
-
 	double dHeight =10;
 	double dWidth =0;
 };
