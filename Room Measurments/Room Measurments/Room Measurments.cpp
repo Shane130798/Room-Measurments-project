@@ -17,11 +17,9 @@ class Floor
 	private:
 
 	protected:
-		double dZaxis = 0;
-		double dXaxis = 0;
 
 
-};
+}
 
 class Wall
 {
@@ -31,15 +29,17 @@ public:
 protected:
 	 
 private:
-
-
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	double dHeight =10;
-	double dWidth =0;
-};
+=======
+	double dHeight =0;
+>>>>>>> Stashed changes
+=======
+	double dHeight =0;
+>>>>>>> Stashed changes
+	double dWidth =0; 
 
-void Floor::GetDetails(double dZaxispass, double dXaxispass) {
-	dZaxis = dZaxispass;
-	dXaxis = dXaxispass;
 };
 
 void Wall::GetWallDetails(double dWidthpass) 
