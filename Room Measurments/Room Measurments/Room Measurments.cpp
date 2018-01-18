@@ -18,7 +18,9 @@ class Floor
 	protected:
 
 
+
 };
+
 
 class Wall
 {
@@ -29,11 +31,9 @@ protected:
 	 
 private:
 
+
 	double dHeight =10;
 	double dHeight =0;
-	double dHeight =0;
-	double dWidth =0; 
-
 };
 
 void Wall::GetWallDetails(double dWidthpass) 
