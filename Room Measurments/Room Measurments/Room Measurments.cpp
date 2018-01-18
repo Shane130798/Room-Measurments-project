@@ -12,10 +12,15 @@ using namespace std;
 class Floor
 {
 	public:
-	
+		void GetDetails(double dZaxispass, double dXaxispass);
+		double ShowResultsFloor(double dZaxis, double dXaxis);
 	private:
 
 	protected:
+		double dZaxis = 0;
+		double dXaxis = 0;
+
+
 };
 
 class Wall
@@ -26,8 +31,15 @@ public:
 protected:
 	 
 private:
+
+
 	double dHeight =10;
 	double dWidth =0;
+};
+
+void Floor::GetDetails(double dZaxispass, double dXaxispass) {
+	dZaxis = dZaxispass;
+	dXaxis = dXaxispass;
 };
 
 void Wall::GetWallDetails(double dWidthpass) 
@@ -35,6 +47,18 @@ void Wall::GetWallDetails(double dWidthpass)
 	dWidth = dWidthpass;
 };
 
+double Floor::ShowResultsFloor(double dZaxis, double dXaxis)
+{
+	double dFloorArea = dXaxis * dZaxis;
+	double dFloorPrice = dFloorArea * 4;
+	double dFloorPriceDeluxe = dFloorArea * 8.50;
+
+	cout << endl << endl << "The Price of Normal Floor is: " << char(156) << dFloorPrice;
+	cout << endl << endl << "The Price of Deluxe Floor is: " << char(156) << dFloorPriceDeluxe;
+
+
+	return dFloorPrice, dFloorPriceDeluxe;
+}
 
 
 double Wall::ShowResults(double dHeightpass, double dWidthpass)
@@ -50,7 +74,9 @@ double Wall::ShowResults(double dHeightpass, double dWidthpass)
 
 int main()
 {
+	Floor oFloor;
 	Wall oWall;
+	double dZaxis = 0, double dXaxis =0;
 	double dHeight = 0;
 	double dWidth = 0;
 	cout << "Welcome to the program!" << endl;
@@ -58,10 +84,19 @@ int main()
 	cin >> dWidth;
 	cout << endl << "Your Wall's Width is: " << dWidth << " M";
 
+	cout << endl << "Please enter the floor's Z axis in Meters: ";
+	cin >> dZaxis;
+	cout << "Your Floors Z Axis is: " << dZaxis << " M" ;
+
+	cout << endl << "Please enter the floor's x axis in Meters: ";
+	cin >> dXaxis;
+	cout << "Your Floors X Axis is: " << dXaxis << " M";
+
+
 	oWall.GetWallDetails(dWidth);
 	oWall.ShowResults(dHeight, dWidth);
-
-
+	oFloor.GetDetails(dZaxis, dXaxis);
+	oFloor.ShowResultsFloor(dZaxis, dXaxis);
 
 
 
