@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{34EB4AE1-9D1E-4D16-9A92-8BF8D87D7C52}</ProjectGuid>
+    <ProjectGuid>{F79B5FC0-01A0-4949-8996-8F96B9F1AF08}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>RoomMeasurments</RootNamespace>
+    <RootNamespace>room_measurment_tool</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Room Measurments.cpp" />
+    <ClCompile Include="room_measurment_tool.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

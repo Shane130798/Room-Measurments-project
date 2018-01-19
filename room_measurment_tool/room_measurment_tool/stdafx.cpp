@@ -1,5 +1,5 @@
 // stdafx.cpp : source file that includes just the standard includes
-// Room Measurments.pch will be the pre-compiled header
+// room_measurment_tool.pch will be the pre-compiled header
 // stdafx.obj will contain the pre-compiled type information
 
 #include "stdafx.h"
