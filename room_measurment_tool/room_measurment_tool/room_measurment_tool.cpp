@@ -4,29 +4,21 @@
 #include "stdafx.h"
 #include <string>
 #include <array>
-#include <conio.h>
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
 class Floor
 {
-<<<<<<< HEAD:room_measurment_tool/room_measurment_tool/room_measurment_tool.cpp
 public:
 	void GetDetails(double dZaxispass, double dXaxispass);
 	double ShowResultsFloor(double dZaxis, double dXaxis);
 private:
 
 protected:
-
-
-=======
-	public:
-	
-	private:
-
-	protected:
->>>>>>> origin/master:Room Measurments/Room Measurments/Room Measurments.cpp
+	double dZaxis = 0;
+	double dXaxis = 0;
 };
 
 class Wall
@@ -35,18 +27,10 @@ public:
 	void GetWallDetails(double dWidthpass);
 	double ShowResults(double dHeightpass, double dWidthpass);
 protected:
-<<<<<<< HEAD:room_measurment_tool/room_measurment_tool/room_measurment_tool.cpp
 
 private:
 	double dHeight = 10;
 	double dWidth = 0;
-
-=======
-	 
-private:
-	double dHeight =10;
-	double dWidth =0;
->>>>>>> origin/master:Room Measurments/Room Measurments/Room Measurments.cpp
 };
 
 void Wall::GetWallDetails(double dWidthpass)
