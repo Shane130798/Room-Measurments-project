@@ -12,10 +12,12 @@ using namespace std;
 class Floor
 {
 	public:
-	
+
 	private:
 
 	protected:
+		double dZaxis = 0;
+		double dXaxis = 0;
 };
 
 class Wall
@@ -24,13 +26,13 @@ public:
 	void GetWallDetails(double dWidthpass);
 	double ShowResults(double dHeightpass, double dWidthpass);
 protected:
-	 
+
 private:
 	double dHeight =10;
 	double dWidth =0;
 };
 
-void Wall::GetWallDetails(double dWidthpass) 
+void Wall::GetWallDetails(double dWidthpass)
 {
 	dWidth = dWidthpass;
 };
@@ -38,7 +40,7 @@ void Wall::GetWallDetails(double dWidthpass)
 
 
 double Wall::ShowResults(double dHeightpass, double dWidthpass)
-{	
+{
 	double  dArea = dHeight * dWidth;
 	double dPrice = dArea * 1;
 	double dPriceDeluxe = dArea * 12;
@@ -71,4 +73,3 @@ int main()
 	_getch();
     return 0;
 }
-
